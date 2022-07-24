@@ -21,7 +21,7 @@ $ make build
 ## Deploy
 
 - For deploy, the IAM user executing commands must have permissions to assume roles AWS CDK uses.
-   - Ref: https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html#bootstrapping-contract
+  - Ref: https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html#bootstrapping-contract
 
 ```bash
 # Check if we need

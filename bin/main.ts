@@ -5,5 +5,4 @@ import * as cdk from 'aws-cdk-lib'
 import { StatefulStack } from '../lib/statefull-stack'
 
 const app = new cdk.App()
-new StatefulStack(app, 'StatefulStack', {
-})
+new StatefulStack(app, 'StatefulStack', {})
