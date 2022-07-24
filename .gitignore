@@ -104,8 +104,9 @@ dist
 .tern-port
 
 # Compiled files
-*.js
 cdk.out
+bin/*.js
+lib/*.js
 
 todo*
 tmp*

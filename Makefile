@@ -1,4 +1,4 @@
-.PHONY: build deploy clean
+.PHONY: fmt build deploy clean
 .PHONY: cdk/synth cdk/diff
 
 DEPENDENCIES := \
@@ -8,6 +8,9 @@ DEPENDENCIES := \
 
 bin/main.js: $(DEPENDENCIES)
 	npx tsc
+
+fmt:
+	npx prettier --write .
 
 build: bin/main.js
 
