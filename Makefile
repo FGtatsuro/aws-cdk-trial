@@ -1,4 +1,4 @@
-.PHONY: fmt lint build deploy clean
+.PHONY: fmt lint build test deploy clean
 .PHONY: cdk/synth cdk/diff
 
 DEPENDENCIES := \
@@ -16,6 +16,9 @@ lint:
 	npx eslint --ext ".ts,.js" .
 
 build: bin/main.js
+
+test:
+	npx vitest run
 
 deploy:
 	npx cdk list | peco --select-1 | xargs npx cdk deploy
