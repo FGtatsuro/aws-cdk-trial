@@ -12,6 +12,18 @@ Trial of AWS CDK
 
 - [AWS Vault](https://github.com/99designs/aws-vault)
 
+## Lint/Format
+
+```bash
+$ make lint fmt
+```
+
+## Test
+
+```bash
+$ make test
+```
+
 ## Build
 
 ```bash
