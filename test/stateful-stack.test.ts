@@ -16,6 +16,6 @@ test('stateful-stack', () => {
     DeletionPolicy: deletionPolicy,
   })
 
-  expect(updateReplacePolicy.asString()).toEqual('Retain')
-  expect(deletionPolicy.asString()).toEqual('Retain')
+  expect(updateReplacePolicy.asString()).toEqual('Delete')
+  expect(deletionPolicy.asString()).toEqual('Delete')
 })
