@@ -2,7 +2,7 @@ node_modules
 
 cdk.out
 bin/*.js
-lib/.js
+lib/*.js
 
 todo*
 tmp*
