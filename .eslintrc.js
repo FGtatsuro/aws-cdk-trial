@@ -16,7 +16,7 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'quotes': ['error', 'single', { allowTemplateLiterals: true }],
+    'quotes': ['error', 'single', { allowTemplateLiterals: true, avoidEscape: true }],
     'comma-dangle': 'off',
     'space-before-function-paren': 'off',
 
