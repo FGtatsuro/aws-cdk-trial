@@ -5,4 +5,5 @@ import * as cdk from 'aws-cdk-lib'
 import { StatefulStack } from '../lib/stateful-stack'
 
 const app = new cdk.App()
-new StatefulStack(app, 'StatefulStack', {})
+const stateful = new StatefulStack(app, 'StatefulStack', {})
+cdk.Tags.of(stateful).add('StateType', 'Full')
