@@ -12,25 +12,21 @@ Trial of AWS CDK
 
 - [AWS Vault](https://github.com/99designs/aws-vault)
 
-## Lint/Format
+## Development
+
+### Build
 
 ```bash
-$ make lint fmt
+$ make lint fmt build
 ```
 
-## Test
+### Test
 
 ```bash
 $ make test
 ```
 
-## Build
-
-```bash
-$ make build
-```
-
-## Deploy
+## Deployment
 
 - For deploy, the IAM user executing commands must have permissions to assume roles AWS CDK uses.
   - Ref: https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html#bootstrapping-contract
