@@ -3,9 +3,9 @@ import { expect, test } from 'vitest'
 import { Capture, Template } from 'aws-cdk-lib/assertions'
 import * as cdk from 'aws-cdk-lib'
 
-import { StatefulStack } from '../lib/stateful-stack'
+import { StatefulStack } from '../lib/stateful'
 
-test('stateful-stack', () => {
+test('stateful', () => {
   const stack = new StatefulStack(new cdk.App(), 'StatefulStack', {})
   const template = Template.fromStack(stack)
 

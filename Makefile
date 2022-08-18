@@ -3,7 +3,7 @@
 
 DEPENDENCIES := \
 		bin/main.ts \
-		lib/stateful-stack.ts \
+		lib/stateful.ts \
 		tsconfig.json
 
 bin/main.js: $(DEPENDENCIES)
