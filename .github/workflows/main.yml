@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  aws:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: make mod/ci
+      - run: make lint fmt/ci
+      - run: make test
+      - run: make build
