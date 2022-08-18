@@ -2,7 +2,7 @@
 // because cdk list doesn't work properly with SyntheticDefaultImports.
 import * as cdk from 'aws-cdk-lib'
 
-import { StatefulStack } from '../lib/stateful-stack'
+import { StatefulStack } from '../lib/stateful'
 
 const app = new cdk.App()
 const stateful = new StatefulStack(app, 'StatefulStack', {})
